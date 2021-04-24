@@ -25,6 +25,15 @@ var game = function(){
 
 
         this.loop();
+
+        window.addEventListener("resize", function(){
+            let w = window.innerWidth;
+            let h = window.innerHeight;
+            self.width = w;
+            self.height = h;
+            self.canvas.width = w;
+            self.canvas.height = h;
+        });
     }
 
     this.loop = function(){
@@ -42,6 +51,7 @@ var game = function(){
         this.bg.draw();
         this.bird.draw();
     }
+
 }
 
 var g = new game();

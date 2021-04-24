@@ -60,7 +60,7 @@ var bird = function(game){
 
     this.draw = function(){
         if (self.img1Loaded && self.img2Loaded && self.img3Loaded) {
-            self.game.context.drawImage(self.currentImage, (self.game.width / 2) - 100, (self.game.height / 2) - 200, 300, 250);
+            self.game.context.drawImage(self.currentImage, (self.game.width / 2), (self.game.height / 2)-(self.game.width * 0.1 / 2), self.game.width * 0.1, self.game.width * 0.1);
         }
     }
 }
