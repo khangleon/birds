@@ -26,6 +26,6 @@ var bg = function(game) {
         if (self.loaded == false){
             return;
         }
-        self.game.context.drawImage(this.image, 0,0);
+        self.game.context.drawImage(self.image, 0,0, self.game.width, self.game.height);
     }
 }

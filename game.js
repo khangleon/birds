@@ -1,8 +1,8 @@
 var game = function(){
     this.canvas = null;
     this.context = null;
-    this.width = screen.width;
-    this.height = screen.height;
+    this.width = window.innerWidth;
+    this.height = window.innerHeight;
 
     this.bird = null;
     this.bg = null;
